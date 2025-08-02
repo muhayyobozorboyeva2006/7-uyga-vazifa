@@ -1,0 +1,525 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1215px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+header {
+  cursor: pointer;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+}
+
+#header {
+  background-color: black;
+}
+#header .header1 {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#header .header-ul {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 30px;
+}
+#header .header-ul li a {
+  color: white;
+}
+@media (max-width: 868px) {
+  #header .header-ul {
+    display: none;
+  }
+}
+#header .toggle {
+  max-width: 35px;
+  height: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: none;
+}
+@media (max-width: 868px) {
+  #header .toggle {
+    display: block;
+  }
+}
+
+#home {
+  background-image: url(../../imges/shaxarlar.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#home .home-tetli {
+  font-size: 45px;
+  line-height: 129%;
+  color: #FFFFFF;
+  padding-top: 279px;
+  padding-bottom: 23px;
+  text-align: center;
+}
+#home .home-des {
+  font-size: 20px;
+  line-height: 129px;
+  color: #FFFFFF;
+  padding-bottom: 23px;
+  text-align: center;
+}
+#home .home-card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  text-align: center;
+  padding-top: px;
+}
+#home .home-card_btn {
+  max-width: 260px;
+  height: 61px;
+  width: 100%;
+  background-color: #FFFFFF;
+  color: black;
+  font-size: 18px;
+  line-height: 100%;
+  margin-bottom: 205px;
+  margin-left: 50px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0, 5s;
+}
+#home .home-card_btn:hover {
+  background-color: rgb(187, 193, 202);
+}
+#home .home-card_tetli2 {
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 100%;
+  max-width: 186px;
+  height: 23px;
+  width: 100%;
+  margin-bottom: 205px;
+  margin-top: 20px;
+  margin-right: 100px;
+}
+@media (max-width: 488px) {
+  #home .home-card_tetli2 {
+    display: none;
+  }
+}
+
+#telefon {
+  background-image: url(../../imges/6c6dc2730e96969e8a8ab36536b6ae344ec664e0.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 150px;
+}
+#telefon .telefon1 {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 20px;
+}
+@media (max-width: 450px) {
+  #telefon .telefon1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#telefon .telefon1-img {
+  max-width: 507px;
+  height: 610px;
+  width: 100%;
+  padding-top: 45px;
+}
+#telefon .telefon1-card_tetli {
+  margin-top: 210px;
+  font-size: 45px;
+  line-height: 129%;
+  color: white;
+  max-width: 622px;
+  height: 66px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+#telefon .telefon1-card_des {
+  margin-top: 23px;
+  font-size: 26px;
+  line-height: 100%;
+  color: white;
+  margin-bottom: 10px;
+  max-width: 555px;
+  height: 175px;
+  width: 100%;
+}
+#telefon .telefon1-card_tetli3 {
+  font-size: 16px;
+  line-height: 100%;
+  color: white;
+  padding-bottom: 200px;
+  max-width: 449px;
+  height: 45px;
+  width: 100%;
+}
+#telefon .telefon2-card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+@media (max-width: 450px) {
+  #telefon .telefon2-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#telefon .telefon3-card {
+  max-width: 552px;
+  height: 411px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 116px;
+}
+#telefon .telefon3-card_tetli {
+  color: white;
+  font-size: 26px;
+  list-style: 100%;
+  padding-bottom: 26px;
+}
+#telefon .telefon3-card_des {
+  font-size: 16px;
+  line-height: 100%;
+  color: white;
+  padding-bottom: 15px;
+}
+#telefon .telefon4-card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  margin-bottom: 200px;
+}
+#telefon .telefon4-card_btn {
+  font-size: 16px;
+  line-height: 157%;
+  color: white;
+  max-width: 180px;
+  height: 25px;
+  border-radius: 20px;
+  border: 2px;
+  background-color: #aea8a8;
+}
+#telefon .telefon4-card_des {
+  color: rgb(243, 239, 239);
+  font-size: 16px;
+  line-height: 157%;
+}
+@media (max-width: 450px) {
+  #telefon .telefon4-card_des {
+    display: none;
+  }
+}
+#telefon .telefon2-card_img {
+  max-width: 567px;
+  height: 356px;
+  width: 100%;
+}
+@media (max-width: 450px) {
+  #telefon .telefon2-card_img {
+    padding-top: 80px;
+  }
+}
+
+#ayfon {
+  background-image: url(../../imges/image\ 263.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 200px;
+}
+#ayfon .ayfon {
+  font-size: 45px;
+  line-height: 129%;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+#ayfon .ayfon-card {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  flex-wrap: wrap;
+  gap: 50px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 1px solid black;
+}
+#ayfon .ayfon-card1 {
+  max-width: 400px;
+  height: 114px;
+  width: 100%;
+  margin-bottom: 500px;
+}
+#ayfon .ayfon-card1_des {
+  font-size: 16px;
+  line-height: 157%;
+  padding-bottom: 44px;
+}
+#ayfon .ayfon-card1_img {
+  background-color: aquamarine;
+  border-radius: 8px;
+}
+
+#menyu {
+  background-image: url(../../imges/image\ 263\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 100px;
+}
+#menyu .menyu-tetli {
+  font-size: 45px;
+  line-height: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  padding-top: 102px;
+  padding-bottom: 55px;
+}
+#menyu .menyu-card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 2px solid black;
+  max-width: 1060px;
+  height: 523px;
+  width: 100%;
+  border-radius: 8px;
+}
+@media (max-width: 430px) {
+  #menyu .menyu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+  }
+}
+#menyu .menyu-card_img {
+  max-width: 409px;
+  height: 409px;
+  width: 100%;
+  padding-top: 130px;
+  padding-left: 67px;
+  padding-bottom: 67px;
+  padding-right: 80px;
+}
+@media (max-width: 430px) {
+  #menyu .menyu-card_img {
+    max-width: 210px;
+    height: 210px;
+    padding-top: 15px;
+    padding-bottom: 0;
+  }
+}
+#menyu .menyu-card_des {
+  font-size: 16px;
+  line-height: 131%;
+  color: rgb(249, 246, 246);
+  padding-top: 101px;
+  padding-bottom: 34px;
+}
+@media (max-width: 430px) {
+  #menyu .menyu-card_des {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+#menyu .menyu-card_tetli2 {
+  font-size: 18px;
+  line-height: 100%;
+  color: rgb(249, 244, 244);
+  padding-bottom: 10px;
+}
+#menyu .menyu-card_tetli3 {
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 85px;
+  color: #FFFFFF;
+}
+@media (max-width: 420px) {
+  #menyu .menyu-card2 {
+    display: none;
+  }
+}
+
+#mashina {
+  background-image: url(../../imges/image\ 262.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 50px;
+}
+#mashina .mashina-tetli {
+  font-size: 45px;
+  line-height: 100%;
+  color: #737070;
+  padding-top: 85px;
+  text-align: center;
+}
+#mashina .mashina-card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+@media (max-width: 390px) {
+  #mashina .mashina-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+#mashina .mashina-card_img {
+  max-width: 601px;
+  height: 394px;
+  width: 100%;
+}
+#mashina .mashina-card1 {
+  padding-top: 75px;
+}
+@media (max-width: 390px) {
+  #mashina .mashina-card1 {
+    padding-top: 20px;
+  }
+}
+#mashina .mashina-card1_img {
+  padding-top: 44px;
+  padding-bottom: 108px;
+}
+#mashina .mashina-card2_img {
+  padding-top: 44px;
+  padding-bottom: 108px;
+}
+@media (max-width: 400px) {
+  #mashina .mashina-card2_img {
+    display: none;
+  }
+}
+
+#shaharlar {
+  background-image: url(../../imges/dubay.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#shaharlar .shaharlar-tetli {
+  font-size: 36px;
+  line-height: 100%;
+  color: #FFFFFF;
+  padding-top: 100px;
+}
+#shaharlar .shaharlar-des {
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+  padding-top: 26px;
+  padding-bottom: 100px;
+}
+#shaharlar .shaharlar {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+@media (max-width: 500px) {
+  #shaharlar .shaharlar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#shaharlar .shaharlar-i {
+  max-width: 343px;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  margin-top: 100px;
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  #shaharlar .shaharlar-i {
+    margin-top: 20px;
+  }
+}
+#shaharlar .shaharlar-i1 {
+  max-width: 343px;
+  height: 50px;
+  width: 100%;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+#shaharlar .shaharlar-btn {
+  font-size: 16px;
+  line-height: 100%;
+  color: #000000;
+  background-color: #FFFFFF;
+  max-width: 343px;
+  height: 50px;
+  width: 100%;
+  cursor: pointer;
+  transition: 0.5px;
+}
+#shaharlar .shaharlar-btn:hover {
+  background-color: #737070;
+}
+@media (max-width: 500px) {
+  #shaharlar .shaharlar-btn {
+    margin-bottom: 80px;
+  }
+}
+
+#harita {
+  background-image: url(../../imges/image\ 251.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 2050px;
+  height: 500px;
+  width: 100%;
+}
+#harita .harita-card_tetli {
+  font-size: 45px;
+  line-height: 100%;
+  color: #FFFFFF;
+  background-color: #000000;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#joylashu {
+  background-image: url(../../imges/Rectangle\ 67.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#joylashu .joyloshu-card {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}/*# sourceMappingURL=style.css.map */

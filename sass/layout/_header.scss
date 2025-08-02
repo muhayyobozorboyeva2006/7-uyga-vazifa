@@ -1,0 +1,40 @@
+header{
+   cursor: pointer;
+   position: fixed;
+   z-index: 1;
+   top: 0;
+   width: 100%;
+}
+#header{
+   background-color:black;
+ .header1{
+    display: grid;
+    grid-template-columns: repeat(3 , auto);
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+ .header-ul{
+    display: grid;
+    grid-template-columns: repeat(6 ,auto);
+    gap: 30px;
+    li a{
+        color: white;
+    }
+    @media (max-width:868px){
+      display: none;
+    }
+ }
+ .toggle{
+    max-width: 35px;
+    height: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    @media (max-width:868px) {
+      display: block;
+    }
+    display: none;
+ }
+}
