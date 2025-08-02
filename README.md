@@ -1,0 +1,1 @@
+# 7-uyga-vazifa
